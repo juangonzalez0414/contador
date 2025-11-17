@@ -1,0 +1,233 @@
+/* Reset básico y configuración de fuente */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3e5f5; /* Púrpura muy suave / Lila pastel (base) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px; /* Bordes más redondeados */
+    /* Sombra con efecto festivo (como si fueran confeti) */
+    box-shadow: 0 15px 40px rgba(233, 30, 99, 0.4), /* Rosa/Fucsia Brillante */
+                0 -5px 20px rgba(179, 157, 219, 0.3); /* Lila más oscuro */
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    transition: all 0.5s ease;
+}
+
+/* Títulos y subtítulos */
+h1 {
+    font-size: 2.8rem;
+    color: #673ab7; /* Púrpura Profundo (Color principal Lila) */
+    margin-bottom: 5px;
+    font-weight: 900;
+    text-shadow: 2px 2px 0 #e1bee7; /* Efecto 3D suave de fiesta (Lila más claro) */
+}
+
+.subtitle {
+    color: #aa00ff; /* Turquesa / Menta (Contraste festivo) */
+    margin-bottom: 35px;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Estilos del grid del contador */
+.countdown-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px; /* Espaciado más compacto */
+}
+
+/* Bloque individual de tiempo (Horas, Minutos, Segundos) */
+.countdown-block {
+    background-color: #ffccbc; /* Naranja/Rosa Pastel (Durazno festivo) */
+    color: #4a148c; /* Púrpura muy oscuro (Fácil de leer) */
+    padding: 20px 10px;
+    border-radius: 12px;
+    /* Sombra interna para dar un look "caramelo" */
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.7), 
+                0 6px 15px rgba(255, 204, 188, 0.8); 
+    min-width: 90px;
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s;
+    border: 3px solid #ce93d8; /* Borde Lila */
+}
+
+.countdown-block:hover {
+    transform: scale(1.05) rotate(1deg); /* Ligero giro y crecimiento festivo */
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.9),
+                0 10px 20px rgba(255, 204, 188, 1);
+}
+
+.time-value {
+    display: block;
+    font-size: 4.0rem; /* Más grande para el efecto festivo */
+    font-weight: 900;
+    line-height: 1;
+    text-shadow: 1px 1px 0 #f8bbd0; /* Sombra sutil para destacar */
+}
+
+.time-label {
+    font-size: 0.9rem; /* Un poco más legible */
+    text-transform: uppercase;
+    margin-top: 5px;
+    opacity: 0.9;
+    color: #673ab7; /* Color principal Lila */
+    font-weight: bold;
+}
+
+/* Separador de dos puntos */
+.separator {
+    font-size: 4.0rem;
+    color: #ce93d8; /* Lila suave */
+    font-weight: 700;
+    line-height: 1;
+}
+
+/* Contenido final al terminar */
+.final-message {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #f8bbd0; /* Rosa Lila claro suave */
+    border-left: 5px solid #e91e63; /* Barra Rosa Fuerte */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.2);
+    text-align: center;
+}
+
+.final-message h2 {
+    color: #d81b60; /* Rosa oscuro */
+    font-size: 2.0rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.final-message p {
+    color: #4a148c; /* Púrpura oscuro */
+    font-size: 1.1rem;
+}
+
+.icon-success {
+    width: 60px; /* Icono más grande */
+    height: 60px;
+    color: #673ab7; /* Color principal Lila */
+    margin: 0 auto 15px;
+}
+
+/* Utilidad para ocultar elementos */
+.hidden {
+    display: none !important;
+}
+
+/* Media Queries para adaptabilidad en móviles */
+@media (max-width: 550px) {
+    .container {
+        padding: 25px;
+    }
+    h1 {
+        font-size: 2.0rem;
+    }
+
+    .subtitle {
+        font-size: 1.0rem;
+    }
+
+    .countdown-grid {
+        gap: 6px;
+    }
+    
+    .countdown-block {
+        min-width: 55px;
+        padding: 10px 3px;
+    }
+
+    .time-value {
+        font-size: 2.5rem;
+    }
+
+    .time-label {
+        font-size: 0.6rem;
+    }
+
+    .separator {
+        font-size: 2.5rem;
+    }
+
+    .final-message h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Contenido final al terminar */
+.final-message {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: #fce4ec; /* Fondo Rosa Claro de la paleta Lila */
+    border-radius: 25px; /* Más redondeado, como un pastel */
+    
+    /* Efecto "Tarta" o "Caramelo" */
+    border: 5px solid #e91e63; /* Borde rosa fuerte (el "glaseado") */
+    box-shadow: 0 10px 20px rgba(103, 58, 183, 0.3), /* Sombra Lila Profunda */
+                inset 0 0 15px rgba(255, 255, 255, 0.9); /* Brillo interior */
+    text-align: center;
+    transform: scale(1); /* Base para animación */
+    animation: celebrate 1s ease-out forwards; /* Aplicar animación al aparecer */
+}
+
+/* Animación de Celebración */
+@keyframes celebrate {
+    0% {
+        transform: scale(0.8) rotate(-5deg);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+.final-message h2 {
+    color: #673ab7; /* Púrpura Profundo */
+    font-size: 2.2rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.final-message p {
+    color: #4a148c; /* Púrpura oscuro */
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo del icono (usaremos el SVG de la vela) */
+.icon-cake {
+    width: 60px;
+    height: 60px;
+    color: #ffb74d; /* Amarillo/Naranja Pastel (Llama de la vela) */
+    fill: #ffccbc; /* Cuerpo de la vela (Rosa Pastel) */
+    stroke: #e91e63; /* Borde de la vela (Rosa Fuerte) */
+    stroke-width: 2px;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+/* Media Query para el mensaje final en móvil */
+@media (max-width: 550px) {
+    .final-message {
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .final-message h2 {
+        font-size: 1.8rem;
+    }
+}

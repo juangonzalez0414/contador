@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Regresivo al Día Siguiente</title>
+    <!-- Enlaza el archivo CSS de estilos (style.css) -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Carga de la fuente Inter para un diseño moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="app-container" class="container">
+
+        <!-- Título principal -->
+        <h1>De tú bblin</h1>
+        <p class="subtitle">Ya casito es tu cumpleaños mi amor</p>
+
+        <!-- Contenedor del Contador (Se oculta al llegar a cero) -->
+        <div id="countdown-container" class="countdown-grid">
+            
+            <!-- Bloque de Horas -->
+            <div class="countdown-block">
+                <span id="hours" class="time-value">00</span>
+                <div class="time-label">Horas</div>
+            </div>
+
+            <!-- Separador estético -->
+            <span class="separator">:</span>
+
+            <!-- Bloque de Minutos -->
+            <div class="countdown-block">
+                <span id="minutes" class="time-value">00</span>
+                <div class="time-label">Minutos</div>
+            </div>
+
+            <!-- Separador estético -->
+            <span class="separator">:</span>
+
+            <!-- Bloque de Segundos -->
+            <div class="countdown-block">
+                <span id="seconds" class="time-value">00</span>
+                <div class="time-label">Segundos</div>
+            </div>
+        </div>
+
+        <!-- Contenido Final (Inicialmente oculto, se muestra al terminar) -->
+        <div id="final-content" class="final-message hidden">
+    <svg class="icon-cake" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path d="M448 32C448 14.33 433.7 0 416 0h-80c-17.67 0-32 14.33-32 32v128h-32V32C272 14.33 257.7 0 240 0h-80C142.3 0 128 14.33 128 32v128H96c-17.67 0-32 14.33-32 32v64c0 10.51 5.109 20.2 13.66 26.15L96 320h320l14.34-73.85C441.9 226.2 448 216.5 448 206.7V160c0-17.67-14.33-32-32-32h-80V32zm-288 128h-32c-8.836 0-16-7.164-16-16s7.164-16 16-16h32c8.836 0 16 7.164 16 16S167.1 160 160 160zM416 160h-32c-8.836 0-16-7.164-16-16s7.164-16 16-16h32c8.836 0 16 7.164 16 16S424.8 160 416 160zM448 352H64c-17.67 0-32 14.33-32 32v96C32 497.7 46.33 512 64 512h384c17.67 0 32-14.33 32-32v-96C480 366.3 465.7 352 448 352zM320 448h-128v-32h128V448z"/>
+    </svg>
+    <h2>¡FELIZ CUMPLEAÑOS MI AMOR!</h2>
+    <p> <a href="https://juangonzalez0414.github.io/teamoooooo/">Presioname bbsita</a></p>
+    <p>Te amo mucho mi amoooor</p>
+</div>
+
+    </div>
+
+    <!-- Enlaza el archivo JavaScript (script.js) -->
+    <script src="script.js"></script>
+</body>
+</html>
